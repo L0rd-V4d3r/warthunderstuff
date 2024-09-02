@@ -1,0 +1,23 @@
+<h1>Warthunder squadron vehicle calculator</h1>
+<img src="https://warthunder.com/i/opengraph-wt.jpg"/>
+<form>
+    <label for="ResearchTotal">Research Total:</label><br>
+    <input type="number" id="ResearchTotal" name="ResearchTotal"><br>
+    <label for="AvgResearch">Average Research per 3 days:</label><br>
+    <input type="number" id="AvgResearch" name="AvgResearch">
+    <input type="button" onClick="divideBy()" Value="Calculate" /><br>  
+</form>
+<script type="text/javascript">
+ function divideBy() {
+            num1 = document.getElementById(
+                "ResearchTotal").value;
+            num2 = document.getElementById(
+                "AvgResearch").value;
+            document.getElementById(
+                "result").innerHTML = num1 / num2 * 3 ;
+    }
+</script>
+    <p>Time to research: (days) : <br>
+        <span id="result"></span>
+    </p>
+ <a href="https://gaijinent.com">Image belongs to Gaijin entertainment</a>
